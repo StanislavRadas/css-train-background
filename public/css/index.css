@@ -118,17 +118,20 @@
 .task25 {
   border: 20px dashed black;
   background-image: url('/img/img-400x200.jpg');
+  background-clip: border-box;
   box-sizing: border-box;
 }
 
 .task26 {
   background-image: url('/img/img-400x200.jpg');
+  background-clip: content-box;
   border: 20px dashed black;
   box-sizing: border-box;
 }
 
 .task27 {
   background-image: url('/img/img-400x200.jpg');
+  -webkit-background-clip: text;
   font-size: 120px;
   font-weight: 900;
   color: transparent;
@@ -136,6 +139,7 @@
 
 .task28 {
   background-image: url('/img/img-400x200.jpg');
+  background-origin: border-box;
   box-sizing: border-box;
   border: 20px dashed black;
   background-repeat: no-repeat;
@@ -143,6 +147,7 @@
 
 .task29 {
   background-image: url('/img/img-400x200.jpg');
+  background-origin: content-box;
   box-sizing: border-box;
   border: 20px dashed black;
   padding: 20px;
@@ -151,6 +156,7 @@
 
 .task30 {
   background-image: url('/img/img-400x200.jpg');
+  background-origin: padding-box;
   box-sizing: border-box;
   border: 20px dashed black;
   background-repeat: no-repeat;
@@ -160,12 +166,14 @@
 }
 
 .task31 {
+  border-image-source: linear-gradient(blue, green);
   border-image-slice: 1%;
   border-image-width: 40px;
   box-sizing: border-box;
 }
 
 .task32 {
+  border-image-source: radial-gradient(red 5%, green 15%, blue 60%);
   border-image-slice: 1%;
   border-image-width: 40px;
   box-sizing: border-box;
@@ -173,6 +181,7 @@
 
 .task33 {
   border-image-source: url('/img/img-400x200.jpg');
+  border-image-repeat: round;
   box-sizing: border-box;
   border-image-width: 40px;
   border-image-slice: 10;
